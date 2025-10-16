@@ -1,0 +1,8 @@
+Test Project 1/Library/
+Test Project 1/Temp/
+Test Project 1/Obj/
+Test Project 1/Build/
+Test Project 1/Logs/
+*.csproj
+*.sln
+*.userprefs
