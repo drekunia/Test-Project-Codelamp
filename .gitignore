@@ -6,3 +6,4 @@ Test Project 1/Logs/
 *.csproj
 *.sln
 *.userprefs
+*.vsidx
