@@ -15,12 +15,14 @@ public class ControllerBola : MonoBehaviour
     [SerializeField] GameObject textFinish;
     [SerializeField] GameObject textPause;
     [SerializeField] GameState state;
+    public float jumpHeight = 2f;
     bool paused = false;
-    
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         Debug.Log("Game Dimulai!");
     }
 
@@ -42,8 +44,15 @@ public class ControllerBola : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3 (moveX, 0, moveZ);
-        transform.Translate(movement * speed * Time.deltaTime);
+        Vector3 movement = new Vector3 (moveX, 0, moveZ) * speed;
+        Vector3 newPosition = rb.position + transform.TransformDirection(movement) * Time.deltaTime;
+        //transform.Translate(movement * speed * Time.deltaTime);
+        rb.MovePosition(newPosition);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
