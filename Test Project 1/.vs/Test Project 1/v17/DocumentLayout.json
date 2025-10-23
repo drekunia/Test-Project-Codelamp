@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\assets\\controllerbola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|solutionrelative:assets\\controllerbola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|g:\\unity ginvo\\codelamp\\test-project-codelamp\\test project 1\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|g:\\unity ginvo\\codelamp\\test-project-codelamp\\test project 1\\assets\\cameracontroller2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|solutionrelative:assets\\cameracontroller2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|g:\\unity ginvo\\codelamp\\test-project-codelamp\\test project 1\\assets\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|solutionrelative:assets\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\assets\\controllerbola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|solutionrelative:assets\\controllerbola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B13C8C4-FE1D-7608-61A0-269A91E64EE7}|Assembly-CSharp.csproj|G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\assets\\scripts\\kapakcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,32 +35,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
-              "ToolTip": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\PlayerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAApAAAA",
+              "Title": "CameraController2.cs",
+              "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\CameraController2.cs",
+              "RelativeDocumentMoniker": "Assets\\CameraController2.cs",
+              "ToolTip": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\CameraController2.cs",
+              "RelativeToolTip": "Assets\\CameraController2.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T11:05:11.418Z",
+              "WhenOpened": "2025-10-23T13:37:59.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ControllerBola.cs",
-              "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\ControllerBola.cs",
-              "RelativeDocumentMoniker": "Assets\\ControllerBola.cs",
-              "ToolTip": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\ControllerBola.cs",
-              "RelativeToolTip": "Assets\\ControllerBola.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwDAAAAAlAAAA",
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager.cs",
+              "ToolTip": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\GameManager.cs",
+              "RelativeToolTip": "Assets\\GameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T03:33:04.722Z",
+              "WhenOpened": "2025-10-23T13:28:12.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CharacterMovement.cs",
+              "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\CharacterMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\CharacterMovement.cs",
+              "ToolTip": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\CharacterMovement.cs",
+              "RelativeToolTip": "Assets\\CharacterMovement.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowFIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:09:38.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ControllerBola.cs",
+              "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\ControllerBola.cs",
+              "RelativeDocumentMoniker": "Assets\\ControllerBola.cs",
+              "ToolTip": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\ControllerBola.cs",
+              "RelativeToolTip": "Assets\\ControllerBola.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwEQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T03:33:04.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "KapakController.cs",
               "DocumentMoniker": "G:\\Unity GINVO\\Codelamp\\Test-Project-Codelamp\\Test Project 1\\Assets\\Scripts\\KapakController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\KapakController.cs",

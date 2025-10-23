@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static ControllerBola;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -10,6 +9,8 @@ public class CharacterMovement : MonoBehaviour
     public float gravity = -9.8f;
     public float jumpHeight = 2f;
 
+    public GameManager gm;
+
     CharacterController characterController;
 
     Animator animator;
@@ -17,6 +18,7 @@ public class CharacterMovement : MonoBehaviour
     GameObject pickedObject;
 
     Vector3 velocity;
+    private float smoothTime= 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +33,20 @@ public class CharacterMovement : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
-        Vector3 movement = transform.forward * moveZ;
-        transform.Rotate(0, moveX * turnSpeed * Time.deltaTime, 0);
+        //Vector3 movement = transform.forward * moveZ;
+        Vector3 direction = new Vector3(moveX,0,moveZ).normalized;
+        //transform.Rotate(0, moveX * turnSpeed * Time.deltaTime, 0);
 
-        characterController.Move(movement * moveSpeed * Time.deltaTime);
+        if (direction.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(direction.x,direction.z) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSpeed, smoothTime);
+
+            transform.rotation = Quaternion.Euler(0,angle,0);
+
+            Vector3 moveDir = Quaternion.Euler(0,targetAngle,0) * Vector3.forward;
+            characterController.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
+        }
 
         if(characterController.isGrounded && velocity.y<0) {
             velocity.y = -2f;
@@ -66,10 +78,15 @@ public class CharacterMovement : MonoBehaviour
             pickedObject = other.gameObject;
             animator.SetTrigger("pick");
         }
+        else if (other.CompareTag("Finish"))
+        {
+            gm.Finish();
+        }
     }
 
     public void PickObject()
     {
+        gm.AddPickedObject();
         Destroy(pickedObject);
     }
 }
